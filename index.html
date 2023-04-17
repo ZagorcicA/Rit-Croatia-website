@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>IST Department at RIT</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery.popup.lightbox.js"></script>
+    <link rel="stylesheet" href="css/popup-lightbox.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css"/>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="js/darkThemePlugin.js"></script>
+
+
+</head>
+<body>
+
+<!-- Navigation bar starts -->
+<nav id='menu'>
+    <input type='checkbox' id='responsive-menu'><label></label>
+    <ul>
+        <li><a href='#about'>About</a></li>
+        <li><a href="#peopleFaculty">Faculty</a></li>
+        <li><a href='#undergraduate'>Undergraduate</a></li>
+        <li><a href='#graduate'>Graduate</a></li>
+        <li><a href='#coopTable'>Coop Table</a></li>
+        <li><a href='#employment'>Employment Table</a></li>
+        <li id="button">
+            <a href='#' id="dark-mode-OnnOff">Toggle Dark mode</a>
+        </li>
+    </ul>
+</nav>
+<!-- Navigation bar ends -->
+
+<!-- Hero page bar starts -->
+<div class="header">
+
+    <div class="centered">INFORMATION SCIENCES & TECHNOLOGIES @ RIT</div>
+</div>
+
+<!-- Hero page bar ends -->
+
+<!-- Content Section starts -->
+<section id="about"></section>
+
+<h1>Meet the Faculty</h1>
+<section id="peopleFaculty"></section>
+
+<h1>Under Graduate</h1>
+<div class="graduateContent">
+    <div id="undergraduate">
+        <div id="web"></div>
+        <div id="human"></div>
+        <div id="computing"></div>
+    </div>
+</div>
+
+
+<h1>Graduate</h1>
+<div class="graduateContent">
+    <div id="graduate">
+        <div id="ISMS"></div>
+        <div id="HMS"></div>
+        <div id="NMS"></div>
+        <div id="MS"></div>
+    </div>
+</div>
+
+<h1>Coop Table</h1>
+<div id="coopTable"></div>
+
+<h1>Employment Table</h1>
+<div id="employment"></div>
+
+
+<!-- Content Section ends -->
+
+<script>
+    $(function() {
+        $('#dark-mode-OnnOff').darkModeOnnOff();
+    });
+</script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+</body>
+
+</html>
